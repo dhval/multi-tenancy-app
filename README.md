@@ -1,4 +1,4 @@
-## Micronaut 3.8.1 Documentation
+## Micronaut 3.9.0-SNAPSHOT
 
 - [User Guide](https://docs.micronaut.io/3.8.1/guide/index.html)
 - [API Reference](https://docs.micronaut.io/3.8.1/api/index.html)
