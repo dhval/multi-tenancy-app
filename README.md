@@ -6,9 +6,15 @@
 - [Micronaut Guides](https://guides.micronaut.io/index.html)
 ---
 
-## Feature jdbc-hikari documentation
+## Micronaut Multi Tenancy 
 
-- [Micronaut Hikari JDBC Connection Pool documentation](https://micronaut-projects.github.io/micronaut-sql/latest/guide/index.html#jdbc)
+### Works fine
+GET http://mini.local:8080/hello/1
+co: default
+
+### Throws  No current transaction present. Consider declaring @Transactional on the surrounding method
+GET http://mini.local:8080/hello/1
+co: secondary
 
 
 ## Feature http-client documentation
