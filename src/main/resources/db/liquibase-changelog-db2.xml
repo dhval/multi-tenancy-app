@@ -21,14 +21,14 @@
         <insert tableName="employee">
             <column  name="id"  value="1"/>
             <column  name="email"  value="johndoe@db2"/>
-            <column  name="name"  value="John Doe"/>
+            <column  name="name"  value="DB2 John Doe"/>
         </insert>
     </changeSet>
     <changeSet id="employee-data2" author="demo">
         <insert tableName="employee">
             <column  name="id"  value="2"/>
             <column  name="email"  value="janedoe@db2"/>
-            <column  name="name"  value="Jane Doe"/>
+            <column  name="name"  value="DB2 Jane Doe"/>
         </insert>
     </changeSet>
 </databaseChangeLog>
