@@ -12,13 +12,16 @@ Demo the error
 
 #### Works fine
 
+``
 GET http://mini.local:8080/hello/1
 co: default
-
+```
 #### Throws  No current transaction present. Consider declaring @Transactional on the surrounding method
+
+```
 GET http://mini.local:8080/hello/1
 co: secondary
-
+```
 
 ## Feature http-client documentation
 
