@@ -1,6 +1,6 @@
 applicationType: default
-defaultPackage: multi.tenancy.app
+defaultPackage: com.sample
 testFramework: junit
 sourceLanguage: java
 buildTool: maven
-features: [annotation-api, app-name, h2, http-client, jackson-databind, java, java-application, jdbc-hikari, junit, logback, maven, netty-server, readme, shade, sql-jdbi, yaml]
+features: [annotation-api, app-name, data, data-jdbc, h2, http-client, jackson-databind, java, java-application, jdbc-hikari, junit, logback, maven, multi-tenancy, netty-server, openapi, readme, serialization-jackson, shade, sql-jdbi, yaml]

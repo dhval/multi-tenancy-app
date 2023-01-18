@@ -1,4 +1,4 @@
-package multi.tenancy.app;
+package com.sample;
 
 import io.micronaut.runtime.Micronaut;
 
