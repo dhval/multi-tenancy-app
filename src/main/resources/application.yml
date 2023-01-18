@@ -35,7 +35,7 @@ liquibase:
     default:
       change-log: classpath:db/liquibase-changelog-db1.xml
     secondary:
-      change-log: classpath:db/liquibase-changelog-db1.xml
+      change-log: classpath:db/liquibase-changelog-db2.xml
 netty:
   default:
     allocator:
