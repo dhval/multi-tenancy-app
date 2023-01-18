@@ -82,6 +82,11 @@
       <scope>compile</scope>
     </dependency>
     <dependency>
+      <groupId>io.micronaut.liquibase</groupId>
+      <artifactId>micronaut-liquibase</artifactId>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>io.micronaut.multitenancy</groupId>
       <artifactId>micronaut-multitenancy</artifactId>
       <scope>compile</scope>
@@ -110,6 +115,11 @@
       <groupId>jakarta.annotation</groupId>
       <artifactId>jakarta.annotation-api</artifactId>
       <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.persistence</groupId>
+      <artifactId>jakarta.persistence-api</artifactId>
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>ch.qos.logback</groupId>

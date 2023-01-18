@@ -1,14 +1,33 @@
 micronaut:
+  scan:
+    packages:
+      - org.jdbi.v3.core.Jdbi
   application:
     name: multiTenancyApp
+  multitenancy:
+    tenantresolver:
+      httpheader:
+        header-name: X-OpCo
+        enabled: true
 datasources:
   default:
-    url: jdbc:h2:mem:devDb;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:mem:devDb1;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
     username: sa
     password: ''
     driver-class-name: org.h2.Driver
-    schema-generate: CREATE_DROP
     dialect: H2
+  secondary:
+    url: jdbc:h2:mem:devDb2;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password: ''
+    driver-class-name: org.h2.Driver
+    dialect: H2
+liquibase:
+  datasources:
+    default:
+      change-log: classpath:db/liquibase-changelog-db1.xml
+    secondary:
+      change-log: classpath:db/liquibase-changelog-db1.xml
 netty:
   default:
     allocator:
