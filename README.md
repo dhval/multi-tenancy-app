@@ -16,14 +16,14 @@ Demo the error
 GET http://mini.local:8080/hello/1
 co: default
 ```
-
+![](200.png)
 #### Throws  No current transaction present. Consider declaring @Transactional on the surrounding method
 
 ```
 GET http://mini.local:8080/hello/1
 co: secondary
 ```
-
+![](500.png)
 ## Feature http-client documentation
 
 - [Micronaut HTTP Client documentation](https://docs.micronaut.io/latest/guide/index.html#httpClient)
